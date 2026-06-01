@@ -335,7 +335,7 @@ export default function Scrolly() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 font-mono text-xs text-white/40 transition-colors hover:text-white/75"
         >
-          <span className="text-sm">©</span> 2026 Aidia
+          <span className="text-sm">©</span> 2022 Aidia.uk
         </a>
       </footer>
     </div>
