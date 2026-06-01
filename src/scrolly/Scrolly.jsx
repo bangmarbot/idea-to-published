@@ -94,14 +94,6 @@ const STOPS = STEPS.map((_, i) => (STEPS.length === 1 ? 0 : i / (STEPS.length - 
 function Intro() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
-      <motion.p
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="font-mono text-[11px] tracking-[0.18em] text-white/50 uppercase sm:text-sm sm:tracking-widest"
-      >
-        Scroll-driven edition
-      </motion.p>
       <motion.h1
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
@@ -336,8 +328,15 @@ export default function Scrolly() {
       <Intro />
       <Stage />
       <Closing />
-      <footer className="border-t border-white/10 py-10 text-center font-mono text-xs text-white/35">
-        Scrollytelling build · React · Tailwind · Framer Motion
+      <footer className="border-t border-white/10 py-10 text-center">
+        <a
+          href="https://aidia.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 font-mono text-xs text-white/40 transition-colors hover:text-white/75"
+        >
+          <span className="text-sm">©</span> 2026 Aidia
+        </a>
       </footer>
     </div>
   )
